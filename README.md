@@ -1,1 +1,1 @@
-# dungeon-master-computer
+# DMC
