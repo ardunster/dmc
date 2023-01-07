@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/dependencies/doctest.h"
+#include "../include/dependencies/doctest/doctest.h"
 #include "../include/dmc/UserInterface.hpp"
 
 int UserInterface::Interface()
