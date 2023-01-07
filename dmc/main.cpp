@@ -2,6 +2,7 @@
 
 #define DOCTEST_CONFIG_IMPLEMENT
 #include "include/dependencies/doctest.h"
+#include "include/dmc/UserInterface.hpp"
 
 int main(int argc, char **argv)
 {
@@ -18,10 +19,11 @@ int main(int argc, char **argv)
 
     std::cout << "Welcome to DMC!" << std::endl;
 
-    int client_stuff_return_code = 0;
-    // your program - if the testing framework is integrated in your production code
+    UserInterface userInterface;
 
-    return doctestResult + client_stuff_return_code;
+    int interfaceExitCode = userInterface.Interface();
+
+    return doctestResult + interfaceExitCode;
 };
 
 TEST_CASE("Verifying tests run")

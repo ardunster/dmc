@@ -7,7 +7,11 @@ include_directories(src)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(dmc main.cpp)
+set(SOURCES src/UserInterface.cpp)
+
+add_executable(dmc)
+target_sources(dmc PRIVATE main.cpp ${SOURCES})
 
 # Entry point for tests only
-add_executable(dmc_test tests.cpp)
+add_executable(dmc_test)
+target_sources(dmc_test PRIVATE tests.cpp ${SOURCES})
