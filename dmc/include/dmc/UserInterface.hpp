@@ -13,7 +13,7 @@ public:
 
     int Interface();
 
-    Command parse(std::string input);
+    Command parseCommand(std::string input);
 };
 
 #endif // !DMC_USERINTERFACE_HPP
