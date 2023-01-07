@@ -1,7 +1,7 @@
 #include <iostream>
 
 #define DOCTEST_CONFIG_IMPLEMENT
-#include "include/doctest.h"
+#include "include/dependencies/doctest.h"
 
 int main(int argc, char **argv)
 {
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
         return doctestResult;
     }
 
-    std::cout << "Hola" << std::endl;
+    std::cout << "Welcome to DMC!" << std::endl;
 
     int client_stuff_return_code = 0;
     // your program - if the testing framework is integrated in your production code

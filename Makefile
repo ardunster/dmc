@@ -13,3 +13,5 @@ dmc:
 
 test:
 	./build/dmc_test
+
+.PHONY: build

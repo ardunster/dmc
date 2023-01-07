@@ -1,5 +1,5 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "include/doctest.h"
+#include "include/dependencies/doctest.h"
 
 // Compile this file as the entry point of any code that needs to run tests
 // but is not yet in the main executable.
