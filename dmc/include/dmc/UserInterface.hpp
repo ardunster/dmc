@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DMC_USERINTERFACE_HPP
+#define DMC_USERINTERFACE_HPP
 #include <iostream>
 
 class UserInterface
@@ -14,3 +15,5 @@ public:
 
     Command parse(std::string input);
 };
+
+#endif // !DMC_USERINTERFACE_HPP
