@@ -11,7 +11,7 @@ build: clean
 dmc:
 	./build/dmc
 
-test:
+test: build
 	./build/dmc_test
 
 clean:
