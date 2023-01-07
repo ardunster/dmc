@@ -26,8 +26,7 @@ int main(int argc, char **argv)
     return doctestResult + interfaceExitCode;
 };
 
-TEST_CASE("Verifying tests run")
+TEST_CASE("Sanity Check")
 {
     CHECK(1 == 1);
-    // CHECK(1 == 2);
 }
