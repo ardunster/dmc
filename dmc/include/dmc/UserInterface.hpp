@@ -1,6 +1,7 @@
 #ifndef DMC_USERINTERFACE_HPP
 #define DMC_USERINTERFACE_HPP
 #include <iostream>
+#include "onestring/onestring.hpp"
 
 class UserInterface
 {
@@ -13,7 +14,7 @@ public:
 
     int Interface();
 
-    Command parseCommand(std::string input);
+    Command parseCommand(onestring input);
 };
 
 #endif // !DMC_USERINTERFACE_HPP

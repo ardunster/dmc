@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../include/dependencies/doctest/doctest.h"
-#include "../include/dmc/UserInterface.hpp"
+#include "doctest/doctest.h"
+#include "dmc/UserInterface.hpp"
 
 int UserInterface::Interface()
 {
@@ -17,7 +17,7 @@ int UserInterface::Interface()
 //     return false;
 // }
 
-UserInterface::Command UserInterface::parseCommand(std::string input)
+UserInterface::Command UserInterface::parseCommand(onestring input)
 {
 
     if (input == "encounter")

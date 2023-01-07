@@ -1,8 +1,8 @@
 #include <iostream>
 
 #define DOCTEST_CONFIG_IMPLEMENT
-#include "include/dependencies/doctest/doctest.h"
-#include "include/dmc/UserInterface.hpp"
+#include "doctest/doctest.h"
+#include "dmc/UserInterface.hpp"
 
 int main(int argc, char **argv)
 {
