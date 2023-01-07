@@ -4,7 +4,7 @@ help:
 
 build:
 	@echo "Running build scripts..."
-	cmake src/ -B build
+	cmake dmc/ -B build
 	cmake --build build
 	@echo "Build complete."
 
@@ -14,4 +14,7 @@ dmc:
 test:
 	./build/dmc_test
 
-.PHONY: build
+clean:
+	cmake -E remove_directory ./build
+
+.PHONY: build dmc
